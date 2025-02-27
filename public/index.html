@@ -16,6 +16,16 @@
     <span id="result"></span>
 
     <script>
+      //Global variables declared with var are automatically added to the window object
+var bob = 'bob';
+const sally = 'sally';
+    
+console.log(window.bob === bob);//true
+console.log(window.sally === sally);//false
+
+var document = 'hello this is my variable';
+console.log(document);//give the DOM object instead 
+console.log(window.document === document)//true because declaration ignored
 
 
     </script>
